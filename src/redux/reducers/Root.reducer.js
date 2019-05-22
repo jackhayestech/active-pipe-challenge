@@ -1,7 +1,10 @@
 import { combineReducers } from 'redux';
-import Properties from './properties.reducer';
+
+import Ui from './Ui.reducer';
+import Properties from './Properties.reducer';
 
 const rootReducer = () => combineReducers({
+  Ui,
   Properties,
 });
 
