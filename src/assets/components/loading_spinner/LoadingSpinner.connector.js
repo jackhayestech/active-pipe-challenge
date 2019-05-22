@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import LoadingSpinner from './LoadingSpinner.component';
 
 const mapStateToProps = state => ({
-  display: state.ui.loadingDisplay,
+  display: state.Ui.loadingDisplay,
 });
 
 const mapDispatchToProps = () => ({});
