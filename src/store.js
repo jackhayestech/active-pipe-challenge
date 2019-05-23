@@ -1,5 +1,5 @@
 import { createStore, applyMiddleware, compose } from 'redux';
-import createRootReducer from './redux/reducers/root.reducer';
+import createRootReducer from './redux/reducers/Root.reducer';
 
 /*
 *
