@@ -1,0 +1,6 @@
+/* The div the wraps the application */
+.appContainer{
+  background-color: #44505e;
+  width: 100vw;
+  height: 100vh;
+}
