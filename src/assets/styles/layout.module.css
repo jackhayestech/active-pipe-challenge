@@ -10,4 +10,5 @@
 .startupSpinnerWrapper{
   display: flex;
   align-self: center;
+  font-size: 48px;
 }
