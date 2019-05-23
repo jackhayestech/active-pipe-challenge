@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { startupSpinnerWrapper } from '../../../styles/layout.module.css'
 
-import { faSpinner } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import SpinnerWrapper from '../../common/loading_spinner/LoadingSpinner.component';
 
 const LoadingSpinner = ({ display }) => {
   if (!display) {
@@ -10,11 +10,10 @@ const LoadingSpinner = ({ display }) => {
   }
 
   return (
-    <FontAwesomeIcon
-      icon={faSpinner}
-      spin
-    />
-  )
+    <div className={startupSpinnerWrapper}>
+      <SpinnerWrapper />
+    </div>
+  );
 }
 
 LoadingSpinner.propTypes = {

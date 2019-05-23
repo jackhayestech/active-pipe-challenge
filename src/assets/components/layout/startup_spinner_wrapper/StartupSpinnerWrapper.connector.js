@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import LoadingSpinner from './LoadingSpinner.component';
+import StartupSpinnerWrapper from './StartupSpinnerWrapper.component';
 
 const mapStateToProps = state => ({
   display: state.Ui.loadingDisplay,
@@ -10,4 +10,4 @@ const mapDispatchToProps = () => ({});
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(LoadingSpinner);
+)(StartupSpinnerWrapper);

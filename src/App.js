@@ -1,12 +1,12 @@
 import React from 'react';
 
 import { appContainer } from './assets/styles/layout.module.css';
-import LoadingSpinner from './assets/components/loading_spinner/LoadingSpinner.connector';
+import StartupSpinnerWrapper from './assets/components/layout/startup_spinner_wrapper/StartupSpinnerWrapper.connector';
 
 const App = () => {
   return (
-    <div class={appContainer}>
-      <LoadingSpinner />
+    <div className={appContainer}>
+      <StartupSpinnerWrapper />
     </div>
   );
 }
