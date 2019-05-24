@@ -1,6 +1,11 @@
+.header{
+  width: 100%;
+  height: 75px;
+  background-color: #343e4a;
+}
+
 .propertiesWrapper{
   padding: 15px;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   overflow-y: scroll;

@@ -15,7 +15,10 @@ const ApplicationWrapper = ({ properties }) => {
   if (properties.length === 0) {
     return (
       <div className={applicationWrapper}>
-        No properties found.
+        <Header />
+        <span>
+          No properties found.
+        </span>
       </div>
     )
   }
