@@ -16,7 +16,7 @@ const PropertyStatus = ({ status }) => {
 };
 
 PropertyStatus.propTypes = {
-  color: PropTypes.string.isRequired,
+  status: PropTypes.string.isRequired,
 };
 
 export default PropertyStatus;

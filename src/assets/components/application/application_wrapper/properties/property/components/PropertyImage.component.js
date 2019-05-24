@@ -9,7 +9,7 @@ const PropertyImg = ({ imageSrc }) => (
 );
 
 PropertyImg.propTypes = {
-  imageSrc: PropTypes.number.isRequired,
+  imageSrc: PropTypes.string.isRequired,
 };
 
 export default PropertyImg;

@@ -7,14 +7,16 @@ import PropertyWrapper from './property/PropertyWrapper.component'
 const PropertiesWrapper = ({ properties, filter }) => (
   <div className={propertiesWrapper}>
     {
-      properties.map(property => {
+      properties.map((property,i) => {
         if (filter === 'filter_status' || property.status === filter) {
           return (
             <PropertyWrapper
+              key={i}
               property={property}
             />
           )
         }
+        return null;
       })
     }
   </div>
