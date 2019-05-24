@@ -17,6 +17,8 @@
 .property{
   background-color: #ffffff;
   padding: 10px;
+  color: #7d7272;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .propertyHead{
@@ -67,6 +69,7 @@
   padding-bottom: 70%;
   float: left;
   height: 0;
+  margin-bottom: 10px;
 }
 
 .propertyImg{
