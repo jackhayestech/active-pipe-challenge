@@ -7,7 +7,7 @@ export default {
    * @returns {object}
    */
   async load() {
-    const result = await api.get(`${process.env.API_URL}/challenge/properties`);
+    const result = await api.get(`https://code-challenge.activepipe.com/challenge/properties`);
     return result;
   },
 }

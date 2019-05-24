@@ -4,6 +4,8 @@ import App from './App';
 
 import { Provider } from 'react-redux';
 import store from './store';
+import { loadProperties } from './redux/action_creators/Properties.actioncreator';
+
 import * as serviceWorker from './assets/utilities/serviceWorker';
 
 ReactDOM.render(
@@ -11,6 +13,8 @@ ReactDOM.render(
     <App />
   </Provider>,
 document.getElementById('root'));
+
+store.dispatch(loadProperties());
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
