@@ -1,12 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { propertyStatus, propertyStatusSpan } from '../../../../styles/properties.module.css';
+import StatusIndicator from './status_indicator/StatusIndicator.component';
 
 const PropertyStatus = ({ status }) => (
   <div className={propertyStatus}>
     <span className={propertyStatusSpan}>
-      {status}
+      { status.replace('_', ' ') }
     </span>
+    <StatusIndicator
+      status={status}
+    />
   </div>
 );
 
