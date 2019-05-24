@@ -4,8 +4,11 @@ import App from './App';
 
 import { Provider } from 'react-redux';
 import store from './store';
+import { loadProperties } from './redux/action_creators/Properties.actioncreator';
 
 import * as serviceWorker from './assets/utilities/serviceWorker';
+
+store.dispatch(loadProperties());
 
 ReactDOM.render(
   <Provider store={store}>
