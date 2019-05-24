@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { propertyPrice } from '../../../../styles/properties.module.css';
 
 const PropertyPrice = ({ price }) => (
-  <span className={propertyPrice}>
+  <div className={propertyPrice}>
     {price}
-  </span>
+  </div>
 );
 
 PropertyPrice.propTypes = {

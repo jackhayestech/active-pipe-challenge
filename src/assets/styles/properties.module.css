@@ -13,3 +13,47 @@
 .propertyPadding{
   padding: 15px;
 }
+
+.property{
+  background-color: #ffffff;
+  padding: 5px;
+}
+
+.propertyHead{
+  display: flex;
+  margin-bottom: 7px;
+}
+
+.propertyPrice{
+  display: flex;
+  flex-grow: 1;
+}
+
+.propertyStatus{
+  display: flex;
+  flex-grow: 1;
+}
+
+.propertyStatusSpan{
+  text-align: right;
+  width: 100%;
+}
+
+.propertyImgContainer{
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  float: left;
+  height: 0;
+}
+
+.propertyImg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.propertyAddress{
+  text-align: center;
+}

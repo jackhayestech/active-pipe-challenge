@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { propertyStatus } from '../../../../styles/properties.module.css';
+import { propertyStatus, propertyStatusSpan } from '../../../../styles/properties.module.css';
 
 const PropertyStatus = ({ status }) => (
-  <span className={propertyStatus}>
-    {status}
-  </span>
+  <div className={propertyStatus}>
+    <span className={propertyStatusSpan}>
+      {status}
+    </span>
+  </div>
 );
 
 PropertyStatus.propTypes = {

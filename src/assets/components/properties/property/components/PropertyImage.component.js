@@ -1,13 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { propertyImg } from '../../../../styles/properties.module.css';
+import { propertyImg, propertyImgContainer } from '../../../../styles/properties.module.css';
 
-const PropertyImg = ({ img }) => (
-  <img src='img' alt='property' className={propertyImg} />
+const PropertyImg = ({ imageSrc }) => (
+  <div className={propertyImgContainer}>
+    <img src={imageSrc} alt='property' className={propertyImg} />
+  </div>
 );
 
 PropertyImg.propTypes = {
-  price: PropTypes.number.isRequired,
+  imageSrc: PropTypes.number.isRequired,
 };
 
 export default PropertyImg;

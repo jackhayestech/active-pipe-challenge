@@ -4,18 +4,17 @@ import { propertyAddress } from '../../../../styles/properties.module.css';
 
 const PropertyAddress = ({ street, suburb, state, postcode  }) => (
   <div className={propertyAddress}>
-    <span>
+    <div>
       {street}
-    </span>
-    <span>
+    </div>
+    <div>
       {suburb}
-    </span>
-    <span>
+    </div>
+    <div>
       {state}
-    </span>
-    <span>
+      &nbsp;
       {postcode}
-    </span>
+    </div>
   </div>
 );
 

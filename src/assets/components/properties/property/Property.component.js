@@ -23,7 +23,7 @@ const Property = (props) => {
         <PropertyPrice price={price} />
         <PropertyStatus status={status} />
       </div>
-      <PropertyImage image={image}/>
+      <PropertyImage imageSrc={image}/>
       <PropertyAddress
         street={street}
         suburb={suburb}
