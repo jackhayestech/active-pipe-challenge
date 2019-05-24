@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { propertiesWrapper } from '../../styles/properties.module.css';
+import { propertiesWrapper } from '../../../../styles/application.module.css';
 
 import PropertyWrapper from './property/PropertyWrapper.component'
 
