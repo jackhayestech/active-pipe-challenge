@@ -4,14 +4,18 @@ import { propertiesWrapper } from '../../../../styles/application.module.css';
 
 import PropertyWrapper from './property/PropertyWrapper.component'
 
-const PropertiesWrapper = ({ properties }) => (
+const PropertiesWrapper = ({ properties, filter }) => (
   <div className={propertiesWrapper}>
     {
-      properties.map(i => (
-        <PropertyWrapper
-          property={i}
-        />
-      ))
+      properties.map(property => {
+        if (filter === 'filter_status' || property.status === filter) {
+          return (
+            <PropertyWrapper
+              property={property}
+            />
+          )
+        }
+      })
     }
   </div>
 );
@@ -22,6 +26,7 @@ PropertiesWrapper.defaultProps = {
 
 PropertiesWrapper.propTypes = {
   properties: PropTypes.array,
+  filter: PropTypes.string.isRequired,
 };
 
 export default PropertiesWrapper;
