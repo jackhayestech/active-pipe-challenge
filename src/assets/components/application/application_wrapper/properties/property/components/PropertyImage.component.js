@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { propertyImg, propertyImgContainer } from '../../../../styles/properties.module.css';
+import { propertyImg, propertyImgContainer } from '../../../../../../styles/application.module.css';
 
 const PropertyImg = ({ imageSrc }) => (
   <div className={propertyImgContainer}>
@@ -9,7 +9,7 @@ const PropertyImg = ({ imageSrc }) => (
 );
 
 PropertyImg.propTypes = {
-  imageSrc: PropTypes.number.isRequired,
+  imageSrc: PropTypes.string.isRequired,
 };
 
 export default PropertyImg;
