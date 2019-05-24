@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import PropertiesWrapper from './PropertiesWrapper.component';
 
 const mapStateToProps = state => ({
-  properties: state.Properties,
+  properties: state.Properties.data,
 });
 
 const mapDispatchToProps = () => ({});
