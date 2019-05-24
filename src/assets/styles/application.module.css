@@ -8,6 +8,10 @@
   
 }
 
+.applicationWrapper{
+  min-width: 100vw;
+}
+
 .propertiesWrapper{
   padding: 15px;
   display: flex;
