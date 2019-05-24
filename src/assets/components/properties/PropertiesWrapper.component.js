@@ -22,9 +22,9 @@ const PropertiesWrapper = ({ properties }) => {
   return (
     <div className={propertiesWrapper}>
       {
-        properties.map(property => (
+        properties.map(i => (
           <PropertyWrapper
-            property={property}
+            property={i}
           />
         ))
       }

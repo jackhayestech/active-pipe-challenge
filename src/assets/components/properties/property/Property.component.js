@@ -1,8 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { propertyComponent} from '../../../styles/properties.module.css';
+import { property, propertyHead } from '../../../styles/properties.module.css';
+import PropertyPrice from './components/PropertyPrice.component';
+import PropertyStatus from './components/PropertyStatus.component';
+import PropertyImage from './components/PropertyImage.component';
+import PropertyAddress from './components/PropertyAddress.component';
 
-const Property = ({ property }) => {
+const Property = (props) => {
   const {
     status,
     street,
@@ -11,11 +15,21 @@ const Property = ({ property }) => {
     postcode,
     price,
     image,
-  } = property;
+  } = props;
 
   return (
-    <div className={propertyComponent}>
-      
+    <div className={property}>
+      <div className={propertyHead}>
+        <PropertyPrice price={price} />
+        <PropertyStatus status={status} />
+      </div>
+      <PropertyImage image={image}/>
+      <PropertyAddress
+        street={street}
+        suburb={suburb}
+        state={state}
+        postcode={postcode}
+      />
     </div>
   );
 };
