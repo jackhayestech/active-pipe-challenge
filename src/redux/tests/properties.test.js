@@ -27,8 +27,8 @@ test('should fail loading property data', async () => {
  * Test loading of properties
  *
  * Expect Loading display to be false
- * Expect alert display to be true
- * Expect alert type to be error
+ * Expect alert display to be false
+ * Expect properties data to match expected
  */
 test('should load property data', async () => {
   mockFetch(sucessfulLoad);
