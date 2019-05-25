@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The message alert item To display error message 1`] = `null`;
+
+exports[`The wrapper for the application To display error message 1`] = `null`;
