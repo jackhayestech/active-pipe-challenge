@@ -28,6 +28,8 @@ const Ui = (state = initialState, action) => {
         ...state,
         alert: action.data,
       }
+    case 'RESET':
+        return initialState
     default:
       return state;
   }
