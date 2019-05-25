@@ -2,12 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { alert, error } from '../../../styles/ui.module.css'
 
+import Error from './error/Error.connector'
+
 const returnAlertType = (type) => {
   switch (type) {
     case 'error':
-      return <span>error</span>
+      return <Error />
     default:
-      return null;
+      return '';
   };
 };
 

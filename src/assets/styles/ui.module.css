@@ -13,6 +13,19 @@
   align-items: center;
 }
 
+.alertContent{
+  color: #ffffff;
+  display: flex;
+  width: 90%;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .error{
   background-color: #ba4848;
+  cursor: pointer;
+}
+
+.errorContent{
+  flex-grow: 1;
 }
