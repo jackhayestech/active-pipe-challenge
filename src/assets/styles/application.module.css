@@ -16,15 +16,12 @@
   outline: none;
 }
 
-.applicationWrapper{
-  min-width: 100vw;
-}
-
 .propertiesWrapper{
   padding: 15px;
   display: flex;
   flex-wrap: wrap;
   overflow-y: scroll;
+  height: calc(100vh - 105px);
 }
 
 .propertyWrapper{

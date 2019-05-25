@@ -1,5 +1,5 @@
 import React from 'react';
-import { spinner } from '../../../styles/common.module.css'
+import { spinner } from '../../../styles/ui.module.css'
 
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
