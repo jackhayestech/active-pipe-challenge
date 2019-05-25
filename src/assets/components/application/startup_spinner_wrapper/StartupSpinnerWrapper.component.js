@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { startupSpinnerWrapper } from '../../styles/layout.module.css'
+import { startupSpinnerWrapper } from '../../../styles/layout.module.css'
 
-import SpinnerWrapper from '../../common/loading_spinner/LoadingSpinner.component';
+import SpinnerWrapper from '../../ui/loading_spinner/LoadingSpinner.component';
 
 const LoadingSpinner = ({ display }) => {
   if (!display) {
