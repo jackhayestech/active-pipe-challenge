@@ -8,6 +8,7 @@ import { loadProperties } from './redux/action_creators/Properties.actioncreator
 
 import * as serviceWorker from './assets/utilities/serviceWorker';
 
+// Load properties on start up
 store.dispatch(loadProperties());
 
 ReactDOM.render(
