@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The message alert item To display error message 1`] = `null`;
+
+exports[`The wrapper for the application No properties displayed 1`] = `null`;
+
+exports[`The wrapper for the application No properties found 1`] = `
+<div
+  className="applicationWrapper"
+>
+  <div
+    className="header"
+  >
+    <select
+      className="filter"
+      onChange={[Function]}
+    >
+      <option
+        defaultValue={true}
+        value="filter_status"
+      >
+        Filter Status
+      </option>
+      <option
+        value="current"
+      >
+        Current
+      </option>
+      <option
+        value="off_market"
+      >
+        Off Market
+      </option>
+      <option
+        value="sold"
+      >
+        Sold
+      </option>
+    </select>
+  </div>
+  <span>
+    No properties found.
+  </span>
+</div>
+`;
+
+exports[`The wrapper for the application To display error message 1`] = `null`;

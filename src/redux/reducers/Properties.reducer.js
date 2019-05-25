@@ -11,6 +11,8 @@ const Properties = (state = initialState, action) => {
         ...state,
         data: action.data,
       };
+    case 'RESET':
+      return initialState
     default:
       return state;
   }
