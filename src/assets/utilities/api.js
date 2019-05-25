@@ -25,7 +25,9 @@ export default {
       })
         .then(response => response.json());
     } catch (error) {
-      return error;
+      return {
+        error: error,
+      };
     }
 
     return json;
