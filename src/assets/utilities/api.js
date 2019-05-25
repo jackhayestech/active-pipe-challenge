@@ -17,11 +17,16 @@ export default {
    * @returns {promise}
    */
   async get(url){
-    const json = await fetch(url, {
-      method: 'GET',
-      headers: this.getHeaders(),
-    })
-      .then(response => response.json());
+    let json
+    try {
+      json = await fetch(url, {
+        method: 'GET',
+        headers: this.getHeaders(),
+      })
+        .then(response => response.json());
+    } catch (error) {
+      return error;
+    }
 
     return json;
   }
