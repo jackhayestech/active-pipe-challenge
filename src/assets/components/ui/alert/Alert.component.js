@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { alert } from '../../../styles/ui.module.css'
+import { alert, error } from '../../../styles/ui.module.css'
 
 const returnAlertType = (type) => {
   switch (type) {
     case 'error':
-      return "error"
+      return <span>error</span>
     default:
       return null;
   };
@@ -17,7 +17,7 @@ const Alert = ({ display, type }) => {
   }
 
   return (
-    <div className={alert}>
+    <div className={`${alert} ${error}`}>
       { returnAlertType(type) }
     </div>
   );

@@ -3,5 +3,16 @@
 }
 
 .alert{
-  
+  position: absolute;
+  width: 70%;
+  height: 60px;
+  margin: auto;
+  top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error{
+  background-color: #ba4848;
 }
