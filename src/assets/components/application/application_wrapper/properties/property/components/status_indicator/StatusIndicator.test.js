@@ -1,7 +1,7 @@
 import React from 'react';
 import { create } from "react-test-renderer";
 
-import StatusIndicator from './Error.component';
+import StatusIndicator from './StatusIndicator.component';
 
 describe("Status indicator", () => {
   test("To display with current indicator", () => {
