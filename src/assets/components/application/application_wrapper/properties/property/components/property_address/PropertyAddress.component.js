@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { propertyAddress } from '../../../../../../styles/application.module.css';
+import { propertyAddress } from '../../../../../../../styles/application.module.css';
 
 const PropertyAddress = ({ street, suburb, state, postcode  }) => (
   <div className={propertyAddress}>

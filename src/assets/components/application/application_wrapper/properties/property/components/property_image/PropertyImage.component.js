@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { propertyImg, propertyImgContainer } from '../../../../../../styles/application.module.css';
+import { propertyImg, propertyImgContainer } from '../../../../../../../styles/application.module.css';
 
 const PropertyImg = ({ imageSrc }) => (
   <div className={propertyImgContainer}>

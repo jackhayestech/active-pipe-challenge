@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { property, propertyHead } from '../../../../../styles/application.module.css';
-import PropertyPrice from './components/PropertyPrice.component';
-import PropertyStatus from './components/PropertyStatus.component';
-import PropertyImage from './components/PropertyImage.component';
-import PropertyAddress from './components/PropertyAddress.component';
+import PropertyPrice from './components/property_price/PropertyPrice.component';
+import PropertyStatus from './components/property_status/PropertyStatus.component';
+import PropertyImage from './components/property_image/PropertyImage.component';
+import PropertyAddress from './components/property_address/PropertyAddress.component';
 
 const Property = (props) => {
   const {

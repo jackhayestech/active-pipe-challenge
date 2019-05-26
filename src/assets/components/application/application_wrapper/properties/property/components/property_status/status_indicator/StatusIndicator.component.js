@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { statusIndicator, green, orange, red } from '../../../../../../../styles/application.module.css';
+import { statusIndicator, green, orange, red } from '../../../../../../../../styles/application.module.css';
 
 const PropertyStatus = ({ status }) => {
   switch (status) {
