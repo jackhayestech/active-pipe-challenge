@@ -1,5 +1,5 @@
 .header{
-  width: 100%;
+  width: 100vw;
   height: 75px;
   background-color: #343e4a;
   display: flex;
@@ -22,10 +22,11 @@
   flex-wrap: wrap;
   overflow-y: scroll;
   height: calc(100vh - 105px);
+  justify-content: center;
 }
 
 .propertyWrapper{
-  width: 20%;
+  width: 260px;
 }
 
 .propertyPadding{
