@@ -5,7 +5,6 @@
 .alert{
   position: absolute;
   width: 70%;
-  height: 60px;
   margin: auto;
   top: 25px;
   display: flex;
@@ -19,6 +18,7 @@
   width: 90%;
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
 }
 
 .error{
@@ -28,4 +28,5 @@
 
 .errorContent{
   flex-grow: 1;
+  padding: 15px;
 }
