@@ -1,7 +1,7 @@
 import React from 'react';
 import { create } from "react-test-renderer";
 
-import LoadingSpinner from './Alert.component';
+import LoadingSpinner from './LoadingSpinner.component';
 
 describe("The loading spinner", () => {
   test("Should display correctly", () => {
