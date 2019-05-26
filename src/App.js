@@ -1,26 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { appContainer } from './assets/styles/layout.module.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Alert from './assets/components/ui/alert/Alert.connector';
+import StartupSpinnerWrapper from './assets/components/application/startup_spinner_wrapper/StartupSpinnerWrapper.connector';
+import ApplicationWrapper from './assets/components/application/application_wrapper/ApplicationWrapper.connector';
+
+const App = () => (
+  <div className={appContainer}>
+    <Alert />
+    <StartupSpinnerWrapper />
+    <ApplicationWrapper />
+  </div>
+);
 
 export default App;

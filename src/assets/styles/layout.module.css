@@ -1,0 +1,15 @@
+/* The div the wraps the application */
+.appContainer{
+  background-color: #44505e;
+  width: 100%;
+  height: calc(100vh - 105px);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.startupSpinnerWrapper{
+  display: flex;
+  align-self: center;
+  font-size: 48px;
+}
